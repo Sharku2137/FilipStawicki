@@ -1,0 +1,609 @@
+html{
+    user-select: none;
+}
+body{
+    display: block;
+    margin:0;
+    overflow-x: hidden;
+}
+#topbar{
+    background-color:rgb(27, 27, 27);
+    color:aliceblue;
+    position: absolute;
+    width: 100vw;
+    left:0;
+    top:0;
+    height: 10vh;
+}
+#logo{
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+    height: 8vh;
+    width: 8vh;
+    top:1vh;
+    left:1vh;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    font-weight: bold;
+    text-shadow: 0.5vh 0.5vh 0.5vh;
+}
+#Main{
+    position: absolute;
+    height: 4vh;
+    width: 16vh;
+    top:1vh;
+    left:11vh;
+    background-color: rgb(40, 40, 40);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+#Content{
+    position: absolute;
+    height: 4vh;
+    width: 16vh;
+    top:1vh;
+    left:28vh;
+    background-color: rgb(40, 40, 40);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+#More{
+    position: absolute;
+    height: 4vh;
+    width: 16vh;
+    top:1vh;
+    left:45vh;
+    background-color: rgb(40, 40, 40);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+#mainBtn{
+    height:4vh;
+    width:16vh;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    text-align: center;
+    border-radius: 7px;
+    color:aliceblue;
+    text-decoration: none;
+}
+#Main:hover{
+    background-color: rgb(54, 54, 54);
+}
+#Content:hover{
+    background-color: rgb(54, 54, 54);
+}
+#More:hover{
+    background-color: rgb(54, 54, 54);
+}
+#pusty{
+    height:2vh;
+}
+#Content-drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 39vh;
+    width:20vh;
+    position: absolute;
+    top:4vh;
+    left:-2vh;
+    background-color: rgb(40, 40, 40);
+    border-radius: 7px;
+    visibility: hidden;
+    z-index: 5;
+}
+.cntdrp{
+    height:5vh;
+    width:20vh;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    text-align: center;
+}
+.cntdrp:hover{
+    background-color: rgb(54, 54, 54);
+    border-radius: 7px;
+}
+.cntdrp a{
+    color:aliceblue;
+    text-decoration: none;
+    position: relative;
+    display:block;
+    height:5vh;
+    width: 20vh;
+    border-radius: 7px;
+}
+.cntdrp a.active{
+    background-color: black;
+}
+#Content:hover #Content-drop{
+    visibility: visible;
+}
+#More-drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14vh;
+    width:20vh;
+    position: absolute;
+    top:4vh;
+    left:-2vh;
+    background-color: rgb(40, 40, 40);
+    border-radius: 7px;
+    visibility: hidden;
+    z-index: 5;
+}
+.mrdrp{
+    height:5vh;
+    width:20vh;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    text-align: center;
+}
+.mrdrp:hover{
+    background-color: rgb(54, 54, 54);
+    border-radius: 7px;
+}
+.mrdrp a{
+    color:aliceblue;
+    text-decoration: none;
+    position: relative;
+    display:block;
+    height:5vh;
+    width: 20vh;
+    border-radius: 7px;
+}
+.mrdrp a.active{
+    background-color: black;
+}
+#More:hover #More-drop{
+    visibility: visible;
+}
+#kontent{
+    text-align: center;
+    width:94vw;
+    height:90vh;
+    position: absolute;
+    top: 10vh;
+    left: 3vw;
+    right: 3vw;
+}
+.Slides{
+    display: none;
+}
+img{
+    width:75vw;
+
+}
+.slideshow{
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: aliceblue;
+  font-size: 15px;
+  position: absolute;
+  bottom:8px;
+  left:15vw;
+  width: 20%;
+  text-align: center;
+  background-color: black;
+}
+.numbertext {
+  color: aliceblue;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.cityContent{
+    position: absolute;
+    top: 10vh;
+    width:94vw;
+    left: 3vw;
+    right: 3vw;
+}
+iframe{
+    width:90vw;
+    height:50vh;
+    text-align: center;
+}
+#foot{
+    height:3vh;
+    width:100vw;
+    background-color: black;
+    color:white;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+#ankieta{
+    position: absolute;
+    top:10vh;
+    left:3vw;
+    right:3vw;
+    height:90vh;
+    width:94vw;
+}
+table{
+    border: 2px black solid;
+}
+table td{
+    border: 1px black solid;
+    font-style: italic;
+}
+li{
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 20px;
+}
+#back{
+    background-color: rgb(27, 27, 27);
+    color: aliceblue;
+    height:6vh;
+    width:6vh;
+    position: fixed;
+    bottom: 4vh;
+    right: 1vh;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vh;
+    font-weight: bold;
+}
+#back a{
+    background-color: rgb(27, 27, 27);
+    color: aliceblue;
+    height:6vh;
+    width:6vh;
+    position: fixed;
+    bottom: 4vh;
+    right: 1vh;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vh;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1200px) {
+    #topbar{
+        background-color:rgb(27, 27, 27);
+        color:aliceblue;
+        position: absolute;
+        width: 100vw;
+        left:0;
+        top:0;
+        height: 11vh;
+    }
+    #Main{
+        position: absolute;
+        height: 4vh;
+        width: 15vh;
+        top:1vh;
+        left:10vh;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    #Content{
+        position: absolute;
+        height: 4vh;
+        width: 15vh;
+        top:6vh;
+        left:10vh;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    #More{
+        position: absolute;
+        height: 4vh;
+        width: 15vh;
+        top:6vh;
+        left:26vh;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    #mainBtn{
+        height:4vh;
+        width:16vh;
+        position: static;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        text-align: center;
+        border-radius: 7px;
+        color:aliceblue;
+        text-decoration: none;
+    }
+    #Content-drop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 37vh;
+        width:15vh;
+        position: absolute;
+        top:4vh;
+        left:0;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        visibility: hidden;
+        z-index: 5;
+    }
+    .pusty{
+        height:2vh;
+    }
+    .cntdrp{
+        height:5vh;
+        width:15vh;
+        position: static;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+        text-align: center;
+    }
+    .cntdrp:hover{
+        background-color: rgb(54, 54, 54);
+        border-radius: 7px;
+    }
+    .cntdrp a{
+        color:aliceblue;
+        text-decoration: none;
+        position: relative;
+        display:block;
+        height:5vh;
+        width: 15vh;
+        border-radius: 7px;
+    }
+    #Content:hover #Content-drop{
+        visibility: visible;
+    }
+    #More-drop{
+        height: 12vh;
+        width:15vh;
+        position: absolute;
+        top:4vh;
+        left:0;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        visibility: hidden;
+        z-index: 5;
+    }
+    .mrdrp{
+        height:5vh;
+        width:15vh;
+        position: static;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+        text-align: center;
+    }
+    .mrdrp:hover{
+        background-color: rgb(54, 54, 54);
+        border-radius: 7px;
+    }
+    .mrdrp a{
+        color:aliceblue;
+        text-decoration: none;
+        position: relative;
+        display:block;
+        height:5vh;
+        width: 15vh;
+        border-radius: 7px;
+    }
+    #More:hover #More-drop{
+        visibility: visible;
+    }
+    .cityContent{
+        position: absolute;
+        top: 11vh;
+        left: 3vw;
+        right: 3vw;
+        width: 94vw;
+    }
+    #ankieta{
+        position: absolute;
+        top:11vh;
+        left:3vw;
+        right:3vw;
+        height:89vh;
+        width:94vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #pusty{
+        height:4vh;
+    }
+    #topbar{
+        background-color:rgb(27, 27, 27);
+        color:aliceblue;
+        position: absolute;
+        width: 100vw;
+        left:0;
+        top:0;
+        height: 15vh;
+        text-align: center;
+    }
+    .cityContent{
+        position: absolute;
+        top: 15vh;
+        left: 3vw;
+        right: 3vw;
+        width: 94vw;
+    }
+    #kontent{
+        text-align: center;
+        width:100vw;
+        height:85vh;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+    }
+    #logo{
+        position: absolute;
+        background-color: aliceblue;
+        color: black;
+        height: 5vh;
+        width: 5vh;
+        top:1vh;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5vh;
+        font-weight: bold;
+        text-shadow: 0.3vh 0.3vh 0.3vh;
+    }
+    #Main{
+        position: absolute;
+        height: 8vh;
+        width: 24vw;
+        top:6vh;
+        left:7vw;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    #mainBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        text-align: center;
+        border-radius: 7px;
+        color:aliceblue;
+        text-decoration: none;
+    }
+    #Content{
+        position: absolute;
+        height: 8vh;
+        width: 24vw;
+        top:6vh;
+        left:38vw;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    #Content-drop{
+        height: 37vh;
+        width:24vw;
+        position: absolute;
+        top:8vh;
+        left:0;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 5;
+    }
+    .cntdrp{
+        height:5vh;
+        width:24vw;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+        text-align: center;
+    }
+    #More{
+        position: absolute;
+        height: 8vh;
+        width: 24vw;
+        top:6vh;
+        left:69vw;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+    }
+    #More-drop{
+        height: 12vh;
+        width:24vw;
+        position: absolute;
+        top:8vh;
+        left:0;
+        background-color: rgb(40, 40, 40);
+        border-radius: 7px;
+        visibility: hidden;
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .mrdrp{
+        height:5vh;
+        width:24vw;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+        text-align: center;
+    }
+    #ankieta{
+        position: absolute;
+        top:15vh;
+        left:3vw;
+        right:3vw;
+        height:85vh;
+        width:94vw;
+    }
+    #buttonsankie{
+        padding-bottom: 3vh;
+    }
+}
