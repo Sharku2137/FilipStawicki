@@ -465,14 +465,14 @@ li{
     }
     .cityContent{
         position: absolute;
-        top: 15vh;
+        top: 16vh;
         left: 3vw;
         right: 3vw;
         width: 94vw;
     }
     #ankieta{
         position: absolute;
-        top:11vh;
+        top:16vh;
         left:3vw;
         right:3vw;
         height:89vh;
